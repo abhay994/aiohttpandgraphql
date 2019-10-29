@@ -1,0 +1,66 @@
+from mongoengine import Document
+from mongoengine.fields import(StringField,ListField,ReferenceField)
+from graphene import List as lists
+
+
+class activity(Document):
+    meta = {'collection': 'activitys'}
+    uid = StringField()
+    type = StringField()
+    name = StringField()
+
+
+
+class User(Document):
+    meta = {'collection': 'users'}
+    city = StringField()
+    email = StringField()
+    dob = StringField()
+    isAdmin = StringField()
+    staffCapacity = StringField()
+    studentCapacity = StringField()
+    schoolId = StringField()
+    country = StringField()
+    state = StringField()
+    schoolName = StringField()
+    uid = StringField()
+    type = StringField()
+    mobile = StringField()
+    pincode = StringField()
+    website = StringField()
+    principalName = StringField()
+    subtype = StringField()
+    firstName = StringField()
+    cid = StringField()
+    alternateEmail = StringField()
+    lastName = StringField()
+    image = StringField()
+    salary = StringField()
+    totalLeaves = StringField()
+    address = StringField()
+    doj = StringField()
+    gender = StringField()
+    transport = StringField()
+    parentChildId = StringField()
+    feesStatus = StringField()
+    classNameNameTeacherId = StringField()
+    classNameName = StringField()
+    motherEmail = StringField()
+    street = StringField()
+    fatherImage = StringField()
+    motherMobile = StringField()
+    motherName = StringField()
+    motherImage = StringField()
+    fatherMobile = StringField()
+    fatherEmail = StringField()
+    fatherName = StringField()
+    phoneIndex = StringField()
+    parentNumber = StringField()
+    houseNo = StringField()
+    name = StringField()
+    alternateNumber = StringField()
+    currentAddress = StringField()
+    relation = StringField()
+    date = StringField()
+    phone = StringField()
+
